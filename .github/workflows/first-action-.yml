@@ -1,0 +1,15 @@
+
+name: First Workflow
+
+on:
+  workflow_dispatch:  # enables manual trigger from the Actions tab
+
+jobs:
+  first_job:
+    runs-on: windows-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World"
+
+      - name: Print goodbye
+        run: echo "Done - bye!"
